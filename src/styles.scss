@@ -1,0 +1,59 @@
+// Переменные для цветов и отступов
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$input-padding: 10px;
+
+// Стили для контейнера формы
+.container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.center{
+    text-align: center;
+}
+// Общие стили для элементов формы
+.form-group {
+  margin-bottom: 20px;
+
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  input[type="text"],
+  input[type="tel"],
+  input[type="date"],
+  select,
+  textarea {
+    width: 100%;
+    padding: $input-padding;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+}
+
+// Стили для кнопок формы
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &.btn-primary {
+    background-color: $primary-color;
+    color: #fff;
+  }
+
+  &.btn-secondary {
+    background-color: $secondary-color;
+    color: #fff;
+  }
+}
